@@ -7,7 +7,7 @@ def index():
 
 @app.route('/user/<string:name>/')
 def get_user(name):
-        return 'hello %s your age is %d' % (name,3)
+        return 'hello %s your age is %i' % (name,3)
 
 @app.route('/users')
 def show_all_users():
